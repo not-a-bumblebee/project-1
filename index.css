@@ -3,13 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+.guide{
+    width: 80%;
+    overflow-wrap: break-word;
+    margin-top: 2rem;
+    text-align: center;
+}
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-top: 6rem; */
+
+}
+.game-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .gay {
@@ -149,12 +161,15 @@ img{
 .guess-ui {
     font-size: x-large;
     letter-spacing: 10px;
+    margin-top: 2rem;
+    /* width: fit-content; */
 }
 
 .word-bank-container,
 .guess-container {
-    width: 20rem;
+    /* width: 20rem; */
     overflow-wrap: break-word;
+    text-align: center;
 }
 
 /* -------------------------------------------------------------------------------- */
