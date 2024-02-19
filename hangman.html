@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="gay">Cool Math G@mez!</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="games-dropdown">
+                    <a href="#" class="selected">Games</a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="hangman.html" class="selected">Hangman</a></li>
+                            <li><a href="t3.html">Tic Tac Toe</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Leaderboard</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <svg onclick="window.location.href='index.html'" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="back-arrow">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+    </svg>
+
+    <div id="hangman" class="game-container">
+        <div class="the-hanged">
+            <div class="hang-result">YOU SUCK</div>
+            <div class="demerit d-1"></div>
+            <div class="demerit d-2"></div>
+            <div class="demerit d-3"></div>
+            <div class="demerit d-4"></div>
+            <div class="demerit d-5"></div>
+            <div class="demerit d-6"></div>
+        </div>
+        <div class="guess-container">
+            <p class="guess-ui">_______</p>
+        </div>
+        <div class="hangman-input-container">
+            <input type="text" placeholder="Enter a letter" maxlength="1" class="hangman-input"
+                onkeydown="return /[a-z]/i.test(event.key)">
+            <button class="hangman-btn" onclick="hangedSubmit()">enter</button>
+            <button class="hangman-btn-retry" onclick="hangedInit()">RESTART</button>
+
+        </div>
+        <div class="word-bank-container">
+
+            <p class="word-bank">abcdefghijklmnopqrstuvwxyz</p>
+        </div>
+    </div>
+    <script src="hangman.js"></script>
+</body>
+
+</html>

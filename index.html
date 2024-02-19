@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 1</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="gay">Cool Math G@mez!</h1>
+            <ul>
+                <li><a href="index.html" class="selected">Home</a></li>
+                <li class="games-dropdown">
+                    <a href="#">Games</a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="hangman.html">Hangman</a></li>
+                            <li><a href="t3.html">Tic Tac Toe</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Leaderboard</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <div class="portal-container">
+        <div class="game-portal" onclick="redirect('hangman.html')">
+            <img src="assets/hang.png" alt="hangman">
+            <p >Hangman</p>
+        </div>
+        <div class="game-portal" onclick="redirect('t3.html')">
+            <img src="assets/t3.png" alt="tic tac toe">
+            <p >Tic Tac Toe</p>
+        </div>
+
+    </div>
+   
+
+
+    <div id="rps" class="game-container">
+
+    </div>
+    <!-- 0 0 = 0
+ 0 1 = 1
+ 0 2 = 2
+ 1 0 = 3
+ 1 1 = 4
+ 1 2 = 5
+ 2 0 = 6
+ 2 1 = 7 
+ 2 2 = 8
+ // 3x + y = z  -->
+
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

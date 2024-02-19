@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="gay">Cool Math G@mez!</h1>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li class="games-dropdown">
+                    <a href="#" >Games</a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="hangman.html">Hangman</a></li>
+                            <li><a href="t3.html">Tic Tac Toe</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="contact.html" class="selected">Contact</a></li>
+                <li><a href="#">Leaderboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <svg onclick="window.location.href='index.html'" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="back-arrow">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+    </svg>
+    <div class="contact-container">
+        <h2>Contact</h2>
+        <p>A cool place for games</p>
+        <form onsubmit="submitMessage(event)">
+            <select name="" id="" required>
+                <option value="bug">Report a bug</option>
+                <option value="request">Request a new game</option>
+            </select>
+            <input class="contact-name" type="text" name="" id="" required>
+            <input class="contact-email" type="email" name="" id="" required>
+            <textarea class="contact-message" name="" id="" cols="30" rows="10" required></textarea>
+            <input type="submit">
+        </form>
+
+
+    </div>
+    <script src="contact.js"></script>
+
+</body>
+
+</html>

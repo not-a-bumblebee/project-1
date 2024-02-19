@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 6rem; */
+}
+
+.gay {
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    color: transparent;
+    display: inline-block;
+    background-clip: text;
+}
+
+/* Nav */
+header {
+    background-color: rgb(15, 90, 253);
+    position: relative;
+    color: white;
+    padding: 15px 30px;
+    width: 100%;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    margin-bottom: 4rem;
+}
+
+nav {
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+a:hover,.selected{
+    text-decoration:underline;
+    text-decoration-color: white;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.games-dropdown:hover  .dropdown-content{
+    display: block;
+    background-color: rgb(15, 90, 253);
+    box-shadow: 0 25px 50px -12px rgba(39, 39, 39, 0.25);
+    border-radius: 0.5rem
+}
+.dropdown-content ul{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0.4rem;
+}
+
+.back-arrow{
+    height: 3rem;
+    position: absolute;
+    top: 7rem;
+    left: 4rem;
+    cursor: pointer;
+}
+/* ----------------------------------------------------------------------------------------- */
+/* Portal */
+img{
+    height: 10rem;
+    width: 10rem;
+}
+.game-portal{
+    background-color: red;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    cursor: pointer;
+}
+.portal-container{
+    display: flex;
+    gap: 4rem;
+}
+.game-portal p{
+    text-align: center;
+    font-size: larger;
+}
+
+/* Hangman */
+.the-hanged {
+    height: 20rem;
+    width: 15rem;
+    background-image: url("assets/jimmy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: relative;
+}
+
+.demerit {
+    background-color: red;
+    opacity: 70%;
+    width: 50%;
+    height: 33.33%;
+    border: 1px solid black;
+}
+
+.hangman-input-container{
+    margin-top: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.hang-result{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: bold;
+    top: 30%;
+    color: aqua;
+    font-size: 1.7rem;
+}
+
+.word-bank,
+.guess-ui {
+    font-size: x-large;
+    letter-spacing: 10px;
+}
+
+.word-bank-container,
+.guess-container {
+    width: 20rem;
+    overflow-wrap: break-word;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Tic tac toe */
+.t3-board {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 25rem;
+    width: 25rem;
+    background-color: aquamarine;
+}
+
+.square {
+    width: 33.333333%;
+    height: 33.333333%;
+    background-color: chartreuse;
+    border: 1px solid black;
+    position: relative;
+}
+.red{
+    color: red;
+}
+.green{
+    color: greenyellow;
+}
+/*                                                    ------------------------- */
+
+/* CONTACT */
+.contact-container{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: flex; 
+    flex-direction: column;
+
+}
+

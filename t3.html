@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="gay">Cool Math G@mez!</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="games-dropdown">
+                    <a href="#" class="selected">Games</a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="hangman.html">Hangman</a></li>
+                            <li><a href="t3.html" class="selected">Tic Tac Toe</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Leaderboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <svg onclick="window.location.href='index.html'" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="back-arrow">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+    </svg>
+    <div id="t3" class="game-container">
+        <h2 class="t3-result"></h2>
+        <div class="t3-board">
+            <div class="square s-1" onclick="playerTurn(0,0)"></div>
+            <div class="square s-2" onclick="playerTurn(0,1)"></div>
+            <div class="square s-3" onclick="playerTurn(0,2)"></div>
+            <div class="square s-4" onclick="playerTurn(1,0)"></div>
+            <div class="square s-5" onclick="playerTurn(1,1)"></div>
+            <div class="square s-6" onclick="playerTurn(1,2)"></div>
+            <div class="square s-7" onclick="playerTurn(2,0)"></div>
+            <div class="square s-8" onclick="playerTurn(2,1)"></div>
+            <div class="square s-9" onclick="playerTurn(2,2)"></div>
+        </div>
+        <div class="t3-inputs">
+            <button class="t3-btn" onclick="t3Init('O')">I wanna be: O</button>
+            <button class="t3-btn" onclick="t3Init('X')">I wanna be: X</button>
+        </div>
+    </div>
+    <script src="T3.js"></script>
+
+</body>
+
+</html>
