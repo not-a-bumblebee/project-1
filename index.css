@@ -164,7 +164,9 @@ img{
     margin-top: 2rem;
     /* width: fit-content; */
 }
-
+.word-bank-container{
+    margin-top: 2rem;
+}
 .word-bank-container,
 .guess-container {
     /* width: 20rem; */

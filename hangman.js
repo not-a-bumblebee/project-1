@@ -5,7 +5,7 @@ let hangedDemerits = document.querySelectorAll(".demerit")
 let hangedStart = document.querySelector(".hangman-btn-retry")
 let letterSubmitBtn = document.querySelector(".hangman-btn")
 let hangedResult = document.querySelector(".hang-result")
-let arr = ["pie", "pickled rick", "pajama sam two", "choppers doctoring", "doctor whom"]
+let arr = ["pie", "pickled rick", "pajama sam two", "vampire", "doctor who", "ostrich","cow","dinosaur"]
 
 let wordBankRight = []
 let wordBankWrong = []
@@ -19,7 +19,7 @@ let template
 
 
 const hangedInit = () => {
-    //Resets
+    //Resets everything
     hangedDemerits.forEach(x => x.classList.add("hidden"))
     wordBankRight = []
     wordBankWrong = []
@@ -39,6 +39,7 @@ const hangedInit = () => {
 }
 hangedInit()
 
+//disables buttons, and reveals the end message
 const handleEnd = () =>{
     hangedInput.disabled = true;
     letterSubmitBtn.disabled = true;
@@ -82,6 +83,7 @@ const hangedSubmit = () => {
             }
         }
     }
+    //Resets entered input on submit
     hangedInput.value =""
 
     //game won
