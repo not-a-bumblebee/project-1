@@ -47,10 +47,13 @@ const handleEnd = () =>{
 }
 
 const hangedSubmit = () => {
+    
     let input = hangedInput.value.toLowerCase()
 
     let tempArr = choice.split("");
-
+    if(!input){
+        return
+    }
 
     //check if letter used
     if (![...wordBankRight, ...wordBankWrong].find(x => x == input)) {
